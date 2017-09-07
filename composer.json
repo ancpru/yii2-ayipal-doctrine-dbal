@@ -1,0 +1,16 @@
+{
+  "name": "abexto/yii2-ayipal-doctrine-dbal",
+  "keywords": ["yii2"],
+  "type": "yii2-extension",  
+  "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Andreas Prucha, Abexto - Helicon Software Development",
+            "email": "andreas.prucha@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+      "abexto/yii2-ayipal-doctrine-common": "*"
+    }
+}
