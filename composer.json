@@ -13,5 +13,11 @@
     "minimum-stability": "dev",
     "require": {
       "abexto/yii2-logeia-doctrine-common": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "abexto\\logeia\\yii\\dbal\\": "src/",
+            "abexto\\logeia\\yii\\dbal\\tests": "tests/"
+        }
     }
 }
