@@ -36,6 +36,27 @@ namespace abexto\logeia\yii\doctrine\dbal\configuration;
  *
  * @author Andreas Prucha, Abexto - Helicon Software Development
  */
-class Component extends \abexto\logeia\yii\doctrine\common\base\AbstractDoctrineWrapperComponent
+class Component extends \abexto\logeia\yii\doctrine\dbal\base\AbstractDoctrineWrapperComponent
 {
+    /**
+     * @var Wrapped Doctrine class
+     */
+    public $doctrineClass = \Doctrine\DBAL\Configuration::class;
+    
+    /**
+     * @var bool Default AutoCommit for new connections
+     */
+    public $autoCommit = true;
+    
+    /**
+     * @var bool Schema Assets Filter 
+     */
+    public $filterSchemaAssetsExpression = null;
+    
+    protected function assignPropertiesToinst(\Doctrine\DBAL\Configuration $inst)
+    {
+        parent::assignPropertiesToinst($inst);
+    }
+    
+
 }

@@ -36,7 +36,6 @@ namespace abexto\logeia\yii\dbal\connections;
  *
  * @author Andreas Prucha, Abexto - Helicon Software Development
  */
-class Component
+class Component extends \abexto\logeia\yii\doctrine\dbal\base\AbstractDoctrineWrapperComponent
 {
-    //put your code here
 }

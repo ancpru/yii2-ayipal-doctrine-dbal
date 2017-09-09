@@ -36,21 +36,22 @@ namespace abexto\logeia\yii\doctrine\dbal;
  *
  * @author Andreas Prucha, Abexto - Helicon Software Development
  */
-class DoctrineServiceLocator extends base\AbstractDoctrineServiceLocator
+class DoctrineServiceLocator extends \abexto\logeia\yii\doctrine\common\AbstractDoctrineServiceLocator
 {
+
     const DEFAULT_CONFIGURATION_ID = 'defaultConfiguration';
-    const DEFAULT_CONNECTION_ID = 'defaultConnection';
-    
+    const DEFAULT_CONNECTION_ID    = 'defaultConnection';
+
     /**
      * @var string Default class of configuration components
      */
     public $defaultConfigurationClass = configuration\Component::class;
-    
+
     /**
      * @var string Default class of Connection component
      */
     public $defaultConnectionClass = connection\Component::class;
-   
+
     /**
      * Returns the requested configuration
      * @param string $id
@@ -60,7 +61,7 @@ class DoctrineServiceLocator extends base\AbstractDoctrineServiceLocator
     {
         return $this->get($id);
     }
-    
+
     /**
      * Returns the requested Connection
      * @param string $id
@@ -70,5 +71,5 @@ class DoctrineServiceLocator extends base\AbstractDoctrineServiceLocator
     {
         return $this->get($id);
     }
-    
+
 }
